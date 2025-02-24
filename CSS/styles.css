@@ -1,0 +1,883 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-repeat: no-repeat;
+}
+
+
+/* SEÇÃO MENU */
+.menu {
+  width: 100%;
+  background-image: url(../IMAGES/bg-menu.svg);
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+#logo {
+  width: 140px;
+  margin: 55px;
+  cursor: pointer;
+}
+
+a {
+  background-image: none;
+}
+
+.title {
+  font-size: 55px;
+  margin: 5px 10% 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.description {
+  color: white;
+  font-weight: 300;
+  font-size: 35px;
+  margin: 10px 7% 50px 10%;
+}
+
+/* SEÇÃO MENU INFORMACIONAL */
+.menu-informational {
+  background-color: #eaece5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.information img {
+  width: 55px;
+  margin: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* SEÇÃO CENTRAL */
+.central {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px;
+}
+
+iframe {
+  width: 720px;
+  height: 405px;
+  margin-left: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px  #000;
+}
+
+.text-informational {
+  text-align: left;
+  margin: 0px 90px;
+}
+
+.text-informational h2 {
+  margin-bottom: 5%;
+  margin-left: 2rem;
+  font-size: 45px;
+  font-weight: 700;
+  color: #247ba0;
+}
+
+.text-informational p {
+  font-size: 22px;
+  margin-left: 2rem;
+  line-height: 25px;
+  margin-right: 20px;
+}
+
+/* SEÇÃO CARROSSEL */
+.slider-wrapper {
+  display: flex;
+}
+/* Criado e Desenvolvido por: Isaque Ribeiro Duarte → 04/11/2024 */
+
+.carrossel {
+  text-align: center;
+  padding: 30px 0px;
+  color: #eaece5;
+  background-color: #247ba0;
+}
+
+.carrossel h2 {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 1rem 2rem 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+#seta-esquerda {
+  display: none;
+  margin-right: 3.8rem;
+}
+
+.seta-esquerda {
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.seta-esquerda:hover {
+  transform: translateX(-10px);
+}
+
+.seta-direita {
+  margin-left: 1.8rem;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.seta-direita:hover {
+  transform: translateX(10px);
+}
+
+#Lucas, #Beatriz, #Joao {
+  margin: auto;
+}
+
+#Mariana, #Ricardo, #Ana {
+  margin: auto;
+}
+
+#Beatriz {
+  margin-right: 1.2rem;
+  margin-left: 1.5rem;
+}
+
+#Mariana, #Ricardo, #Ana {
+  display: none;
+} 
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem;
+}
+
+.card-list .card-item {
+  color: #fff;
+  width: 30rem;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  backdrop-filter: blur(100px);
+  background-color: #f4f4f4;
+  box-shadow: 0px 10px 25px #000;
+  transition: .6s e;
+}
+
+.card-list .card-item .card-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-list .card-item .card-conteudo p {
+  font-weight: 500;
+}
+
+.card-list .card-item .card-conteudo strong {
+  font-weight: 700;
+}
+
+.card-list .card-item .card-conteudo strong .profissao {
+  font-size: 12px;
+  font-style: oblique;
+}
+
+.card-list .card-item .user-image {
+  margin: 0.5rem;
+  width: 7.5rem;
+  border-radius: 10% 30% 30% 30%;
+  border: none;
+  box-shadow: 2px 4px 8px #000;
+}
+
+.card-list .card-item .depoimento {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.depoimento p {
+  font-size: 16px;
+}
+
+/* SEÇÃO FORMULARIO */
+.formulario {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.formulario h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #383838;
+  margin: 3rem 4rem;
+}
+
+input {
+  border: 0;
+  border-radius: 10px;
+  background-color: #eaece5;
+  color: #383838;
+  font-size: 16px;
+  width: 25%;
+  height: 60px;
+  margin-bottom: 2.5rem;
+  padding-left: 15px;
+}
+
+.btn  {
+  width: 12%;
+  height: 60px;
+  border: none;
+  margin: 1rem 0 2.5rem 0;
+  background-color: #247ba0;
+  color: #f4f4f4;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 10px;
+  /* padding: 1rem 4rem; */
+  box-shadow: 2px 4px 8px #000;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #1c6ba3;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+
+/* Para LAPTOPS e MONITORES MÉDIOS (1025px a 1440px) */
+@media screen and (max-width: 1440px) {
+  .menu {
+    width: 100%;
+    background-image: url(../IMAGES/bg-menu.svg);
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+  
+  #logo {
+    width: 125px;
+    margin: 45px;
+  }
+    
+  .title {
+     font-size: 55px;
+    margin: 5px 10% 15px;
+     font-weight: 700;
+  }
+  
+  .description {
+    font-size: 35px;
+     margin: 10px 7% 5px 10%;
+  }
+
+  .menu-informational {
+    padding: 10px 0px;
+  }
+  
+  .information {
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+  }
+    
+  .information img {
+    width: 45px;
+    margin: 5px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  iframe {
+    width: 600px;
+    height: 286px;
+    margin-left: 6%;
+  }
+  
+  .text-informational {
+    text-align: left;
+  }
+  
+  .text-informational h2 {
+    margin-bottom: 5%;
+    font-size: 45px;
+  }
+  
+  .text-informational p {
+    font-size: 22px;
+    line-height: 25px;
+    margin-right: 20px;
+  }
+
+  .carrossel {
+    text-align: center;
+    padding: 30px 0px;
+  }
+  
+  .carrossel h2 {
+    font-weight: 700;
+    font-size: 45px;
+     margin: 1rem 2rem 2rem;
+  }
+  
+  .card-list {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2% auto;
+    gap: 3rem;
+  }
+  
+  .card-list .card-item {
+  width: 45rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 5px 12px #000;
+  }
+  
+  .card-list .card-item .user-image {
+    width: 7.5rem;
+  }
+  .seta-direita {
+    margin-left: .8rem;
+  }
+  
+  .seta-esquerda {
+    margin-right: 3.8rem;
+  }
+  
+  #Lucas, #Beatriz, #Joao {
+    margin: auto;
+  }
+  
+  #Mariana, #Ricardo, #Ana {
+    margin: auto;
+  }
+  
+  #Beatriz {
+    margin-right: 1.2rem;
+    margin-left: 1.5rem;
+  }
+  
+  .formulario h2 {
+    font-size: 40px;
+    margin: 3rem 4rem;
+  }
+  
+  .depoimento p{
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 16px;
+    width: 45%;
+    height: 60px;
+    padding-left: 15px;
+  }
+  
+  .btn  {
+    width: 15%;
+    height: 60px;
+    font-size: 18px;
+    padding: 0;
+  }
+}
+
+/* Para TABLETS (768px a 1024px) */
+@media screen and (max-width: 1024px){
+  .menu {
+    width: 100%;
+    background-image: url(../IMAGES/bg-menu.svg);
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+  
+  #logo {
+    width: 120px;
+    margin: 35px;
+  }
+    
+  .title {
+     font-size: 50px;
+    margin: 5px 10% 15px;
+     font-weight: 700;
+  }
+  
+  .description {
+    font-size: 25px;
+     margin: 10px 7% 5px 10%;
+  }
+
+  .menu-informational {
+    padding: 10px 0px;
+  }
+  
+  .information {
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+  }
+    
+  .information img {
+    width: 40px;
+    margin: 5px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .central {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0px;
+  }
+  
+  iframe {
+    margin: 0 auto;
+    width: 534px;
+    height: 300px;
+  }
+  
+  .text-informational {
+    text-align: left;
+    margin: 10% auto 0;
+  }
+  
+  .text-informational h2 {
+    margin-bottom: 5%;
+    padding: 0;
+    font-size: 45px;
+    text-align: center;
+  }
+  
+  .text-informational p {
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .carrossel {
+    text-align: center;
+    padding: 30px 0px;
+  }
+  
+  .carrossel h2 {
+    font-weight: 700;
+    font-size: 45px;
+     margin: 1rem 2rem 2rem;
+  }
+  
+  .card-list {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2% auto;
+    gap: 3rem;
+  }
+  
+  .card-list .card-item {
+  width: 37rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 5px 12px #000;
+  }
+  
+  .card-list .card-item .user-image {
+    width: 7.5rem;
+  }
+  .seta-direita {
+    margin-left: .8rem;
+  }
+  
+  .seta-esquerda {
+    margin-right: 3.8rem;
+  }
+  
+  #Lucas, #Beatriz, #Joao {
+    margin: auto;
+  }
+  
+  #Mariana, #Ricardo, #Ana {
+    margin: auto;
+  }
+  
+  #Beatriz {
+    margin-right: 1.2rem;
+    margin-left: 1.5rem;
+  }
+  
+  .formulario h2 {
+    font-size: 40px;
+    margin: 3rem 4rem;
+  }
+  
+  .depoimento p{
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 14px;
+    width: 50%;
+    height: 55px;
+    padding-left: 15px;
+  }
+  
+  .btn  {
+    width: 20%;
+    height: 55px;
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
+/* Para CELULARES MÉDIOS (481px a 767px) */
+@media screen and (max-width: 767px) {
+  .menu {
+    width: 100%;
+    background-image: url(../IMAGES/bg-menu.svg);
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+  
+  #logo {
+    width: 100px;
+    margin: 30px;
+  }
+    
+  .title {
+     font-size: 45px;
+    margin: 5px 10% 15px;
+     font-weight: 700;
+  }
+  
+  .description {
+    font-size: 22px;
+     margin: 10px 7% 5px 10%;
+  }
+
+  .menu-informational {
+    padding: 10px 0px;
+  }
+  
+  .information {
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+  }
+    
+  .information img {
+    width: 35px;
+    margin: 5px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  .central {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0px;
+  }
+  
+  iframe {
+    margin: 0 auto;
+    width: 434px;
+    height: 244px;
+  }
+  
+  .text-informational {
+    text-align: left;
+    margin: 10% auto 0;
+  }
+  
+  .text-informational h2 {
+    margin-bottom: 5%;
+    padding: 0;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .text-informational p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .carrossel {
+    text-align: center;
+    padding: 30px 0px;
+  }
+  
+  .carrossel h2 {
+    font-weight: 700;
+    font-size: 40px;
+     margin: 1rem 2rem 2rem;
+  }
+  
+  .card-list {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2% auto;
+    gap: 3rem;
+  }
+  
+  .card-list .card-item {
+  width: 35rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 5px 12px #000;
+  }
+  
+  .card-list .card-item .user-image {
+    width: 6.5rem;
+  }
+  .seta-direita {
+    margin-left: .8rem;
+  }
+  
+  .seta-esquerda {
+    margin-right: 3.8rem;
+  }
+  
+  #Lucas, #Beatriz, #Joao {
+    margin: auto;
+  }
+  
+  #Mariana, #Ricardo, #Ana {
+    margin: auto;
+  }
+  
+  #Beatriz {
+    margin-right: 1.2rem;
+    margin-left: 1.5rem;
+  }
+  
+  .formulario h2 {
+    font-size: 40px;
+    margin: 3rem;
+  }
+  
+  .depoimento p{
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 14px;
+    width: 60%;
+    height: 50px;
+    padding-left: 15px;
+  }
+  
+  .btn  {
+    width: 30%;
+    height: 50px;
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
+/* Para CELULARES PEQUENOS (até 480px) */
+@media screen and (max-width: 480px){
+  .menu {
+    width: 100%;
+    background-image: url(../IMAGES/bg-menu.svg);
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+  
+    #logo {
+      width: 70px;
+      margin: 25px 0 10px 20px;
+    }
+    
+    .title {
+      font-size: 25px;
+      margin: 5px 10% 15px;
+      font-weight: 700;
+    }
+  
+    .description {
+      font-size: 14px;
+      margin: 10px 7% 5px 10%;
+    }
+  
+    .menu-informational {
+      padding: 10px 0px;
+    }
+  
+    .information {
+      width: 100%;
+      margin: 10px;
+      align-items: center;
+    }
+    
+    .information img {
+      width: 25px;
+      margin: 5px;
+    }
+  
+    p {
+      font-size: 12px;
+    }
+  
+    .central {
+      display: grid;
+      flex-direction: column;
+      align-items: center;
+      padding: 70px 0px;
+    }
+  
+    iframe {
+      margin: 0 auto;
+      width: 334px;
+      height: 188px;
+    }
+  
+    .text-informational {
+      text-align: left;
+      margin: 10% auto 0;
+    }
+  
+    .text-informational h2 {
+      margin-bottom: 5%;
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    .text-informational p {
+      font-size: 14px;
+      line-height: 15px;
+      text-align: center;
+      margin: 0 7%;
+    }
+  
+    .carrossel {
+      text-align: center;
+      padding: 30px 0px;
+    }
+  
+    .carrossel h2 {
+      font-weight: 700;
+      font-size: 20px;
+      margin: 1rem 2rem 2rem;
+    }
+  
+    .card-list {
+     display: grid;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 2% auto;
+     gap: 2.5rem;
+   }
+  
+   .card-list .card-item {
+    width: 20rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 12px #000;
+  }
+  
+  .card-list .card-item .user-image {
+    width: 5.5rem;
+  }
+  
+  .seta-direita {
+    margin-left: .8rem;
+  }
+  
+  .seta-esquerda {
+    margin-right: 3.8rem;
+  }
+  
+  #Lucas, #Beatriz, #Joao {
+    margin: auto;
+  }
+  
+  #Mariana, #Ricardo, #Ana {
+    margin: auto;
+  }
+  
+  #Beatriz {
+    margin-right: 1.2rem;
+    margin-left: 1.5rem;
+  }
+  
+  .depoimento p {
+    font-size: 12px;
+  }
+
+  .formulario h2 {
+    font-size: 20px;
+    margin: 2rem;
+  }
+  
+  input {
+    font-size: 12px;
+    width: 70%;
+    height: 40px;
+    padding-left: 15px;
+  }
+  
+  .btn  {
+    width: 30%;
+    height: 40px;
+    font-size: 14px;
+    padding: 0;
+  }
+  }
